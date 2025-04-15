@@ -23,5 +23,9 @@ struct SwiftUiSceneApp: App {
                     }
             }
         }
+        
+        WindowGroup {
+            AlternativeContentView()
+        }
     }
 }
