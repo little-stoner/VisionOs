@@ -11,7 +11,26 @@ import SwiftUI
 struct LearnSwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabView {
+                ContentView()
+                   .tabItem {
+                       Label("Basic", systemImage: "book")
+                   }
+                
+                ScalingView()
+                   .tabItem {
+                       Label("ScaleingView", systemImage: "gear")
+                   }
+                
+                LayeringContent()
+                   .tabItem {
+                       Label("LayeringContent", systemImage: "gear")
+                   }
+                HideView()
+                    .tabItem {
+                        Label("HideView", systemImage: "gear")
+                    }
+            }
         }
     }
 }
