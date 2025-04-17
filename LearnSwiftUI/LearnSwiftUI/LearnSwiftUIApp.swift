@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct LearnSwiftUIApp: App {
+ 
     var body: some Scene {
         WindowGroup {
             TabView {
@@ -26,10 +27,23 @@ struct LearnSwiftUIApp: App {
                    .tabItem {
                        Label("LayeringContent", systemImage: "gear")
                    }
+                
                 HideView()
                     .tabItem {
                         Label("HideView", systemImage: "gear")
                     }
+                
+                AdjustingTheSpace()
+                    .tabItem {
+                        Label("AdjustingTheSpace", systemImage: "gear")
+                    }
+                
+                
+                StateAndBinding()
+                    .tabItem {
+                        Label("StateAndBinding", systemImage: "gear")
+                    }
+                
             }
         }
     }
