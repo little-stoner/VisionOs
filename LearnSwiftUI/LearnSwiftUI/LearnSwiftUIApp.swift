@@ -44,7 +44,46 @@ struct LearnSwiftUIApp: App {
                         Label("StateAndBinding", systemImage: "gear")
                     }
                 
+                AboutMe()
+                    .tabItem {
+                        Label("AboutMe", systemImage: "gear")
+                    }
+                    .padding(80)
+                
+
+                MoreApp()
+                    .tabItem {
+                        Label("MoreApp", systemImage: "gear")
+                    }
+                    .padding(80)
+
             }
         }
+        
+        WindowGroup("ColorGridApp", id: "ColorGridApp") {
+            ColorGridApp()
+        }.defaultSize(CGSize(width: 1200, height: 1000))
+        
+        WindowGroup("DatePlannerApp", id: "DatePlannerApp") {
+            DatePlannerApp()
+        }.defaultSize(CGSize(width: 2000, height: 1600))
+        
+        WindowGroup("SymbolGridApp", id: "SymbolGridApp") {
+            SymbolGridApp()
+        }.defaultSize(CGSize(width: 2000, height: 1600))
+        
+        
+        WindowGroup("ImageGalleryApp", id: "ImageGalleryApp") {
+            ImageGalleryApp()
+        }.defaultSize(CGSize(width: 2000, height: 1600))
+        
+        WindowGroup("MemeCreatorApp", id: "MemeCreatorApp") {
+            MemeCreatorApp()
+        }.defaultSize(CGSize(width: 2000, height: 1600))
+        
+        WindowGroup("AnimatingShapesApp", id: "AnimatingShapesApp") {
+            AnimatingShapesApp()
+        }
+        
     }
 }
